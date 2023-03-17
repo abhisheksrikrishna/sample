@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Renal Login</title>
+
+    <!-- update the version number as needed -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .container {
+      padding: 20%;
+    }
+    .row {
+      transition: 0.4s ease-in-out;
+    }
+    .row:hover {
+      transform: scale(1.25);
+    }
+  </style>
+  <body>
+    <h1 class="text-center text-white font-italic" id="time"></h1>
+
+    <div class="login-container">
+      <h1 class="text-center text-dark font-weight-bold">
+        Renal <span class="text-black-50">- health prediction</span>
+      </h1>
+      <form action="" style="padding: 2%">
+        <h1>LOGIN</h1>
+        <div>
+          <label class="font-weight-bold">Email</label>
+          <input
+            type="email"
+            name="username"
+            placeholder="Enter your email here"
+            value=""
+            id="email"
+          />
+        </div>
+        <div>
+          <label class="font-weight-bold">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your password here"
+            value=""
+            id="password"
+          />
+        </div>
+        <button
+          class="btn btn-dark font-weight-bold btn-block"
+          type="submit"
+          name="login"
+          id="login"
+        >
+          LOGIN
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- CSS only -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="login.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+</html>
